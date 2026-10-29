@@ -62,4 +62,4 @@ python -m venv .venv
 
 历史英文目录复现通过8组RTL、FPGA实现、MCU编译及27项PC单元和配套回归，范围见[历史范围与本次PC验证](docs/pc_update_20261027.md)。本次同步PC修复并进行离线检查，不新增上板结论。当前文件校验见[checksums.sha256](checksums.sha256)。
 
-自研部分发布协议与作者信息由权利人填写；第三方声明见[来源说明](third_party_notices.md)。项目仓库：[GitHub](https://github.com/bbdd777/FPGA-Based-Dual-Bus-I-C-Anomaly-Analyzer)。
+自研部分发布协议与作者信息由权利人填写；项目仓库：[GitHub](https://github.com/bbdd777/FPGA-Based-Dual-Bus-I-C-Anomaly-Analyzer)。

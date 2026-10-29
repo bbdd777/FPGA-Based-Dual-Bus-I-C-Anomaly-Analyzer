@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+.Xil/
+src/vivado_prj/project/
+src/vivado_prj/verification/
+src/mcu/objects/
+src/mcu/listings/
+src/mcu/verification/
+src/mcu/DebugConfig/
+src/pc/verification/
+*.dcp
+*.wdb
+*.jou
+*.uvguix.*

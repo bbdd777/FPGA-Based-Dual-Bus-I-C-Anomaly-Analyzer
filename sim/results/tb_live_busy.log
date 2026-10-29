@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# xsim v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Oct 23 00:24:14 2026
+# Process ID: 30100
+# Current directory: G:/FPGA_test/report/github_package/src/vivado_prj/verification/sim
+# Command line: xsim.exe -log tb_live_busy.log -mode tcl -source {xsim.dir/tb_live_busy/xsim_script.tcl}
+# Log file: G:/FPGA_test/report/github_package/src/vivado_prj/verification/sim/tb_live_busy.log
+# Journal file: G:/FPGA_test/report/github_package/src/vivado_prj/verification/sim\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/tb_live_busy/xsim_script.tcl
+# xsim {tb_live_busy} -autoloadwcfg -runall
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run -all
+PASS ALL tb_live_busy summaries=2 missed=1
+$finish called at time : 28994320 ns : File "G:/FPGA_test/report/github_package/src/vivado_prj/sim/tb_live_busy.v" Line 100
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 218.121 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Oct 23 00:24:24 2026...

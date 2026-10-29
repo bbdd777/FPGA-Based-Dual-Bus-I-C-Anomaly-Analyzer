@@ -1,0 +1,175 @@
+{
+  "date": "2026-10-27",
+  "passed": true,
+  "scope": "Independent copy of current upload package; existing verified RTL streams replayed",
+  "unit_tests": {
+    "passed": true,
+    "tests": 31,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime_matches_fixed_production": true,
+  "runtime_sha256": {
+    "src/pc/app.py": "aeb1268ea487fb5747cb563ec33ce31988eb2c6d5b6370fe383c3a1389bb0fe9",
+    "src/pc/session.py": "1399dfedec7c0860bfc584340b8496578e81a7f96a747a318a02bd58cecf949c",
+    "src/pc/faults.py": "0fa0a55a3b91b02ec91067a00ed43f3879d727d1d4f5ee1f97c8371921815d74",
+    "src/pc/protocol.py": "5e73651ef13015db9c951cc76a4a81e4ba2883aaf2bff06891726bec76ab3f9c",
+    "src/pc/transport.py": "5a066c75337f859e742f54c564c71fe474584cba8f60770b903aa295b73bbc0a",
+    "src/pc/waveform.py": "91b290df1b55143e1e10751d558c576bbea00c802d4bad2c700fc948ee889858",
+    "src/pc/waveform_navigation.py": "9d74a2aec310ddccabbd9c49e9555610fe1723b0695fb96a8fffae5b11051198",
+    "src/pc/waveform_scroll.py": "a5549284aade445fed3710655d01d8ca1a0f1ed6ff7e16e8a26d162a326deb03",
+    "src/pc/decoded_panel.py": "1ea2b0c98b9782489626f9d92dbb2d1a5e04300f2c00eb92aa884ba8d0933e26",
+    "src/pc/legacy_import.py": "b16274962461ff005cab52cc4fd90f8c5d749b868e9ec2e1c27e348c7ef140ae"
+  },
+  "checks": {
+    "gui_result": {
+      "passed": true,
+      "manual_fixed_capture": 1,
+      "auto_fault_capture": 3,
+      "latest_capture": 3,
+      "fixed_axes_retained": true,
+      "fault_channels": 4,
+      "live_channels": 2,
+      "serial_opened": false,
+      "channel_labels_visible_before_data": true,
+      "empty_view_has_no_waveform": true,
+      "recent_low_timeout_visible": true,
+      "pinned_nack_reason_retained": true,
+      "capture_list_has_actual_fault_types": true,
+      "backup_complete_read_separate": true,
+      "scroll_zoom_and_left_drag_both_views": true,
+      "zoom_anchored_at_pointer": true,
+      "shared_time_axes": true,
+      "fixed_view_retained_during_live_updates": true,
+      "actual_sample_bounds_and_minimum_zoom": true,
+      "toolbar_history_compatible": true,
+      "no_sticky_drag_after_leave": true,
+      "navigation_after_capture_switch": true,
+      "decoded_devices_visible": true,
+      "sensor_raw_visible": true,
+      "decoded_panel_readonly": true,
+      "fault_receipt_clock_visible": true,
+      "receipt_not_changed_by_ui_refresh": true,
+      "auto_follows_latest_complete_fault": true,
+      "manual_mode_visible": true,
+      "resume_auto_uses_latest_fault": true,
+      "resume_without_capture_clears_old_wave": true
+    },
+    "replay_result": {
+      "passed": true,
+      "hardware_tested": false,
+      "stream_bytes": 494768,
+      "captures": [
+        {
+          "id": 1,
+          "points": 262144,
+          "reason": 5,
+          "full_b_reads": 1
+        },
+        {
+          "id": 2,
+          "points": 262144,
+          "reason": 6,
+          "full_b_reads": 1
+        },
+        {
+          "id": 3,
+          "points": 262144,
+          "reason": 5,
+          "full_b_reads": 1
+        }
+      ],
+      "fixed_fault": 1,
+      "latest_b": 3,
+      "crc_errors": 0,
+      "sequence_gaps": 0,
+      "uart_1m_physical_bytes": 210,
+      "busy_upload_live_reads": 2,
+      "busy_missed_raw_captures": 1,
+      "invalid_reads_rejected": 4,
+      "missing_stop_timeouts": 1,
+      "records": {
+        "0x11": 1,
+        "0x30": 2,
+        "0x20": 1,
+        "0x32": 2,
+        "0x21": 3,
+        "0x33": 2,
+        "0x10": 17
+      }
+    },
+    "transport_result": {
+      "passed": true,
+      "serial_opened": false,
+      "ui_consumer_running": false,
+      "raw_bytes": 494768,
+      "all_captures_archived": true
+    },
+    "scroll_layout": {
+      "passed": true,
+      "serial_opened": false,
+      "source": "Replay of existing RTL simulation UART stream",
+      "source_sha256": "f72ffb389666ef01858ac8d9ff1e19d0baac75cdc0003c1db19e3d6734afb9dd",
+      "checks": [
+        {
+          "window": [
+            1440,
+            780
+          ],
+          "upper_row_pixels": [
+            63.75,
+            63.74999999999997,
+            63.749999999999986,
+            63.750000000000014
+          ],
+          "lower_row_pixels": [
+            69.50000000000004,
+            69.50000000000003
+          ],
+          "content_height": 744,
+          "viewport_height": 593
+        },
+        {
+          "window": [
+            1120,
+            680
+          ],
+          "upper_row_pixels": [
+            63.75,
+            63.74999999999997,
+            63.749999999999986,
+            63.750000000000014
+          ],
+          "lower_row_pixels": [
+            69.50000000000004,
+            69.50000000000003
+          ],
+          "content_height": 744,
+          "viewport_height": 493
+        }
+      ],
+      "scroll_page_on_blank": true,
+      "zoom_on_axes": true,
+      "fixed_view_retained": true,
+      "row_height_stable_after_zoom": true,
+      "original_hardware_file_unchanged": true,
+      "wheel_check_method": "Page routing function and Matplotlib callbacks; native input checked separately"
+    }
+  },
+  "serial_opened": false,
+  "new_hardware_test": false,
+  "new_rtl_simulation": false,
+  "new_fpga_build": false,
+  "source_streams_in_archive": false,
+  "launcher_validation": {
+    "passed": true,
+    "date": "2026-10-27",
+    "method": "BAT -> Windows PowerShell 5.1 -> isolated Python 3.12 -> hidden real Application smoke wrapper",
+    "first_run_created_environment_and_installed_locked_dependencies": true,
+    "warm_run_skipped_creation_and_install": true,
+    "chinese_and_space_path": true,
+    "missing_package_files_reported_before_setup": true,
+    "serial_opened": false,
+    "source_runtime_modified": false
+  }
+}

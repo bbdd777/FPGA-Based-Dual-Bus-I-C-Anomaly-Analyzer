@@ -1,0 +1,7 @@
+interface:
+  display_name: "FPGA总线分析仪学习指导"
+  short_description: "结合野火课本和分阶段小任务，用直观图解与中文注释带你完成总线分析仪"
+  default_prompt: "使用 $fpga-bus-analyzer-tutor，结合我的实际进度安排下一项小任务，用通俗中文和必要图解讲解，并为示例代码添加详细中文注释。"
+
+policy:
+  allow_implicit_invocation: true

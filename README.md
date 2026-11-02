@@ -10,7 +10,7 @@ I²C Sentinel is an FPGA-based dual-bus I²C anomaly analyzer built on the AMD A
 
 ## 阅读入口
 
-- [设计报告与实测图](report/design_report.md)
+- 设计报告：[PDF](report/design_report.pdf) · [Word](report/design_report.docx) · [Markdown技术说明与实测图](report/design_report.md)
 - [实现说明](docs/design.md) · [04协议](docs/protocol_04.md)
 - [数据与证据索引](report/evidence_index.md) · [仿真结果](sim/results/README.md)
 - [AI协作精选](report/ai_collaboration.md) · [176条对话正文](report/ai_conversations.md) · [可复用Skill](skill/README.md)
@@ -61,8 +61,8 @@ fpga_i2c_sentinel/
 ├── report/                           # 设计报告、实测配图及AI协作记录
 ├── docs/                             # 实现、串口协议和PC更新说明
 ├── tools/                            # 上位机启动与检查脚本
-├── 启动上位机.bat                     # Windows双击启动入口
-├── 上位机使用说明.txt                 # 安装、连接与操作说明
+├── start_pc.bat                     # Windows双击启动入口
+├── use_doc.txt                 # 安装、连接与操作说明
 ├── checksums.sha256                   # 提交文件校验清单
 └── .gitignore                        # 排除构建缓存和本机运行产物
 ```
@@ -76,7 +76,7 @@ fpga_i2c_sentinel/
 | `board/`：上板工程、运行脚本与实测输出 | [正式映像](board/firmware/)、[板级约束](src/vivado_prj/constr/)、[运行工具](tools/)、[实测统计](data/)、[配图](report/figures/) | 映像集中于`board/`；工程、约束、运行脚本和实测材料按用途分开保存 |
 | `data/`：测试数据与参考结果 | [四张统计表](data/) | 100轮记录、性能统计、验证汇总和版本对比；原始采集数据另行归档 |
 | `skill/`及`skill/README.md`：技能包 | [技能包说明](skill/README.md) | FPGA指导Skill与工程证据工作流，各附所需参考 |
-| `report/`：设计报告与大模型协作记录 | [设计报告](report/design_report.md)、[AI精选](report/ai_collaboration.md)、[对话正文](report/ai_conversations.md) | 报告、实测配图、三个纠错案例及176条可见对话正文 |
+| `report/`：设计报告与大模型协作记录 | [PDF报告](report/design_report.pdf)、[Word报告](report/design_report.docx)、[技术说明](report/design_report.md)、[AI精选](report/ai_collaboration.md)、[对话正文](report/ai_conversations.md) | 报告、实测配图、三个纠错案例及176条可见对话正文 |
 
 `docs/`与`tools/`是补充目录，分别保存接口说明和电脑端运行工具。硬件下载需按实际板卡、下载器和工具配置操作；本仓库的构建入口只编译，不自动下载硬件。
 
@@ -88,7 +88,7 @@ fpga_i2c_sentinel/
 
 ## 运行与重建
 
-**Windows双击启动：**先完整解压ZIP，双击根目录的[启动上位机.bat](启动上位机.bat)。首次运行自动建立本包`.venv`并联网安装依赖；以后直接启动。电脑需先安装Python 3.10～3.12（推荐3.12，包含pip与Tkinter），仅运行上位机不需要Vivado/Keil。界面打开后选择串口、1000000波特率，点击“连接监测”。详见[使用说明](上位机使用说明.txt)。
+**Windows双击启动：**先完整解压ZIP，双击根目录的[start_pc.bat](start_pc.bat)。首次运行自动建立本包`.venv`并联网安装依赖；以后直接启动。电脑需先安装Python 3.10～3.12（推荐3.12，包含pip与Tkinter），仅运行上位机不需要Vivado/Keil。界面打开后选择串口、1000000波特率，点击“连接监测”。详见[使用说明](use_doc.txt)。
 
 工具：Vivado2018.3、Keil ARMCC5.06 update5、Python3.10或已验证的3.12。首次在根目录建立环境：
 

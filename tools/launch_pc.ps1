@@ -29,13 +29,13 @@ function Find-TaskPython {
             # py启动器存在但未装对应版本时，继续检查下一个候选。
         }
     }
-    throw '没有找到Python 3.10～3.12。请先安装Python 3.12（包含pip和Tkinter），再双击启动上位机.bat。'
+    throw '没有找到Python 3.10～3.12。请先安装Python 3.12（包含pip和Tkinter），再双击start_pc.bat。'
 }
 
 try {
     foreach ($path in @($requirementsFile, $applicationFile)) {
         if (!(Test-Path -LiteralPath $path)) {
-            throw '缺少上位机文件。请先将整个ZIP解压，再运行包根目录的启动上位机.bat。'
+            throw '缺少上位机文件。请先将整个ZIP解压，再运行包根目录的start_pc.bat。'
         }
     }
     if (!(Test-Path -LiteralPath $taskPython)) {
